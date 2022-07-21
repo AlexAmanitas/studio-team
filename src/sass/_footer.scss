@@ -1,0 +1,298 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-blocks {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.footer-logo {
+  color: #2196f3;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  // font-size: 26px;
+  font-size: 24px;
+  // line-height: 1.19;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+  }
+
+  .footer-logo__accent {
+    color: #ffffff;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.footer-contacts {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  a {
+    display: block;
+  }
+}
+
+.footer-contacts__mail {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-top: 9px;
+  }
+}
+
+.footer-contacts__tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-top: 9px;
+  }
+}
+
+.footer-contacts__adress {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.social {
+  &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+    color: #ffffff;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    fill: #ffffff;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__link:hover &,
+    &__link:focus & {
+      fill: #ffffff;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    // width: 206px;
+  }
+}
+
+.subscribe {
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 94px;
+    margin-right: 0;
+    text-align: left;
+    width: 570px;
+  }
+  &__label {
+    width: 219px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media screen and (min-width: $desktop) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 15px 15px 15px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background: transparent;
+    color: #ffffff;
+
+    &::placeholder {
+      width: 47px;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+
+      letter-spacing: 0.03em;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__btn {
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+
+    background: #2196f3;
+
+    &:hover,
+    &:focus {
+      background: #188ce8;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 12px;
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: #ffffff;
+  }
+}
