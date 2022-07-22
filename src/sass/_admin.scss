@@ -1,0 +1,13 @@
+.admin-box {
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: bottom right;
+  position: relative;
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border-radius: 10px;
+}
