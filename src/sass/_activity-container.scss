@@ -1,0 +1,41 @@
+@mixin small {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+       @content; 
+    }
+}
+@mixin mobile {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+       @content; 
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+       @content; 
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+       @content; 
+    }
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    /*outline: 1px solid red;*/
+   @include small{
+    max-width: 320px;
+   }
+   @include mobile{
+    max-width: 480px;
+   }
+   @include tablet{
+    max-width: 768px;
+   }
+   @include desktop{
+    max-width: 1200px;
+   }
+    } 
+    
+
